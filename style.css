@@ -1,7 +1,7 @@
 html, body {
-  background:#282828;
-  font-family: "Fira Code";
-  color: #EADBB2;
+  background:#2e3440;
+  font-family: "Iosevka";
+  color: #bf616a;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -63,26 +63,26 @@ html, body {
 }
 
 .title {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 li {
-  font-size: 16px;
+  font-size: 20px;
   list-style-type: none;
   padding: 5px
 }
 
 a:link {
   text-decoration: none;
-  color: #8F9191;
+  color: #5e81ac;
 }
 
 a:visited {
-  color: #668F8B;
+  color: #4c566a;
 }
 
 a:hover {
-  color: #FA7921;
+  color: #d08770;
 }
 
 .blinking {
