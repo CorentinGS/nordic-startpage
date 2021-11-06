@@ -5,7 +5,7 @@ Custom browser startpage:
 - Colorscheme: Nordic
 - Cat Gif: [Here](https://github.com/pagankeymaster/nordic-startpage/blob/main/cat.gif)
 
-[Live Preview](https://kennethcheo.github.io/startpage/)
+[Live Preview](https://pagankeymaster.github.io/nordic-startpage/)
 
 ![startpage](startpage.gif)
 <p style="text-align: center;">cat</p>
