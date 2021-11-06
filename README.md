@@ -8,4 +8,3 @@ Custom browser startpage:
 [Live Preview](https://pagankeymaster.github.io/nordic-startpage/)
 
 ![startpage](startpage.gif)
-<p style="text-align: center;">cat</p>
