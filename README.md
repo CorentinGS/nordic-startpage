@@ -9,6 +9,3 @@ Custom browser startpage:
 
 ![startpage](startpage.gif)
 <p style="text-align: center;">cat</p>
-
-## Todo:
-- Turn blinking caret into working search bar
