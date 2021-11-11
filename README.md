@@ -6,5 +6,3 @@ Custom browser startpage:
 - Cat Gif: [Here](https://github.com/pagankeymaster/nordic-startpage/blob/main/cat.gif)
 
 [Live Preview](https://pagankeymaster.github.io/nordic-startpage/)
-
-![startpage](startpage.gif)
