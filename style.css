@@ -1,5 +1,6 @@
-html, body {
-  background:#2e3440;
+html,
+body {
+  background: #2e3440;
   font-family: "Iosevka";
   color: #bf616a;
   height: 100%;
@@ -12,7 +13,9 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 460px 600px 1fr;
   grid-template-areas:
-    ". left right .";
+    "left left right"
+    "left left right"
+    "bottom bottom bottom";
   column-gap: 80px;
   justify-items: center;
   align-items: center;
@@ -30,6 +33,12 @@ html, body {
   width: 100%;
 }
 
+.bottom-container {
+  grid-area: bottom;
+  padding-top: 60px;
+
+}
+
 .gif img {
   max-width: 100%;
   max-height: 100%;
@@ -41,6 +50,21 @@ html, body {
   align-items: center;
   font-size: 40px;
   padding-top: 60px;
+}
+
+input {
+  background-color: unset;
+  font: 16px "Iosevka Nerd Font";
+  color: #d5d5d5;
+  height: 100%;
+  width: 100%;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: solid;
+  border-bottom-color: #384149;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .category {
