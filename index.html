@@ -1,68 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>HOME</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="left-container">
-            <div class="gif">
-                <img src="cat.gif" />
-            </div>
+      <div class="left-container">
+        <div class="gif">
+          <img src="cat.gif" />
+        </div>
+      </div>
+
+      <div class="right-container">
+        <div class="head">
+          <p>> cd ~/<span class="blinking">_</span></p>
         </div>
 
-        <div class="right-container">
-            <div class="head">
-                <p>> cd ~/<span class="blinking">_</span></p>
+        <div class="bookmarks">
+          <div class="category">
+            <div class="links">
+              <li class="title">work</li>
+              <li><a href="https://outlook.office.com">outlook</a></li>
+              <li><a href="https://linkedin.com">linkedin</a></li>
+              <li><a href="https://github.com/">github</a></li>
+              <li><a href="https://ent.unice.fr/">unice</a></li>
             </div>
+          </div>
 
-            <div class="bookmarks">
-                <div class="category">
-                    <div class="links">
-                        <li class="title">work</li>
-                        <li><a href="https://gmail.com">gmail</a></li>
-                        <li><a href="https://outlook.office.com">outlook</a></li>
-                        <li><a href="https://linkedin.com">linkedin</a></li>
-                        <li><a href="https://vim.rtorr.com/">vim</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="links">
-                        <li class="title">dev</li>
-                        <li><a href="https://github.com/">github</a></li>
-                        <li><a href="https://lobste.rs/">lobste.rs</a></li>
-                        <li><a href="https://mankier.com/">mankier</a></li>
-                        <li><a href="https://devdocs.io/">devdocs</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="links">
-                        <li class="title"><a style="color: #EADBB2" href="https://reddit.com">reddit</a></li>
-                        <li><a href="https://reddit.com/r/programming/">programming</a></li>
-                        <li><a href="https://reddit.com/r/selfhosted/">selfhosted</a></li>
-                        <li><a href="https://reddit.com/r/unixporn/">unixporn</a></li>
-                        <li><a href="https://reddit.com/r/mechanicalkeyboards/">mk</a></li>
-                    </div>
-                </div>
-
-                <div class="category">
-                    <div class="links">
-                        <li class="title">play</li>
-                        <li><a href="https://monkeytype.com/">monkeytype</a></li>
-                        <li><a href="https://youtube.com/">youtube</a></li>
-                        <li><a href="https://twitch.tv/">twitch</a></li>
-                        <li><a href="https://netflix.com/">netflix</a></li>
-                    </div>
-                </div>
+          <div class="category">
+            <div class="links">
+              <li class="title">social</li>
+              <li><a href="https://devurls.com">devurls</a></li>
+              <li><a href="https://reddit.com/r/unixporn/">unixporn</a></li>
+              <li><a href="https://news.ycombinator.com/">hackernews</a></li>
+              <li><a href="https://app.daily.dev/">daily</a></li>
             </div>
+          </div>
+
+          <div class="category">
+            <div class="links">
+              <li class="title">dev</li>
+              <li><a href="https://cheat.sh">cheat</a></li>
+              <li><a href="https://mankier.com/">mankier</a></li>
+              <li><a href="https://devdocs.io/">devdocs</a></li>
+              <li>
+                <a
+                  href="https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf"
+                  >emacs</a
+                >
+              </li>
+            </div>
+          </div>
+
+          <div class="category">
+            <div class="links">
+              <li class="title">play</li>
+              <li><a href="https://monkeytype.com/">monkeytype</a></li>
+              <li><a href="https://youtube.com/">youtube</a></li>
+              <li><a href="https://twitch.tv/">twitch</a></li>
+              <li><a href="https://netflix.com/">netflix</a></li>
+            </div>
+          </div>
         </div>
+        <div class="bottom-container">
+          <form id="form" role="search">
+            <input
+              type="search"
+              id="query"
+              name="q"
+              placeholder="Search Duck Duck GO..."
+            />
+          </form>
+          <script>
+            const f = document.getElementById("form");
+            const q = document.getElementById("query");
+            const search = "https://duckduckgo.com/?t=ffab&q=";
+
+            function submitted(event) {
+              event.preventDefault();
+              const url = search + q.value + "&ia=web";
+              window.open(url, "_self");
+            }
+
+            f.addEventListener("submit", submitted);
+          </script>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
