@@ -11,7 +11,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 460px 600px 1fr;
+  grid-template-columns: 1fr 560px 800px 1fr;
   grid-template-areas:
     "left left right"
     "left left right"
